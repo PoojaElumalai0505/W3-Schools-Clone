@@ -1,1 +1,1 @@
-# W3-Schools-Clone
+# W3 Schools Clone
