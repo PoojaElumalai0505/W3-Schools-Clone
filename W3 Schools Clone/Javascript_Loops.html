@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common_css.css">
+    <title>Javascript_Loops</title>
+  </head>
+  <body style="font-size: large;">
+    <div class="navigation">
+      <nav class="navbar navbar-expand-sm fw-bolder" style="background-color:rgb(77, 162, 236)">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="html_basics.html">HTML</a><li>
+          <li class="nav-item"><a class="nav-link" href="CSS_Introduction.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="Javascript_Introduction.html">JAVASCRIPT</a></li>
+          <li class="nav-item"><a class="nav-link" href="SQL_Introduction.html">SQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="Bootstrap_Introduction.html">BOOTSTRAP</a></li>
+          <li class="nav-item"><a class="nav-link" href="PHP_Introduction.html">PHP</a></li>
+    </ul>
+      </nav>
+    </div>
+    <div id="main" >
+      <div id="sidebar">
+        <ul class="list-unstyled components">
+          <li><a href="Javascript_Introduction.html">JavaScript Introduction</a></li>
+          <li><a href="Javascript_Comments.html">Javascript Comments</a></li>
+          <li><a href="Javascript_Variables.html">Javascript Variables</a></li>
+          <li><a href="Javascript_Datatypes.html">Javascript Datatypes</a></li>
+          <li><a href="Javascript_Arrays.html">Javascript Arrays</a></li>
+          <li><a href="Javascript_Loops.html">Javascript Loops</a></li>
+          <li><a href="Javascript_Functions.html">Javascript Functions</a></li>
+          <li><a href="Javascript_Objects.html">Javascript Objects</a></li>
+          <li><a href="Javascript_Switch.html">Javascript Switch</a></li>
+          <li><a href="Javascript_Conditions.html">Javascript Conditions</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="container-fluid mt-5 mx-5">
+            <h1>Javascript Loops</h1>
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-3 text-sm-end">
+                <a href="Javascript_Arrays.html" class="btn px-4">❮ Previous</a>
+                </div>
+                <div class="col-sm-3 text-sm-start">
+                <a href="Javascript_Functions.html"class="btn px-4">Next ❯</a>
+                </div>
+            </div>
+            <div class="mt-5 px-3 pt-2">
+                <p>The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in loops. It makes the code compact. It is mostly used in array.</p>
+                <p>There are four types of loops in JavaScript.</p>
+                <ol>
+                    <li>for loop</li>
+                    <li>while loop</li>
+                    <li>do-while loop</li>
+                    <li>for-in loop</li>
+                </ol>
+            </div>
+            <hr>
+            <h4>JavaScript For loop</h4>
+            <p>The JavaScript for loop iterates the elements for the fixed number of times. It should be used if number of iteration is known.The syntax of for loop is given below.</p>
+            <pre>
+                <h5>Syntax</h5>
+                    for (initialization; condition; increment)  
+                    {  
+                        // code to be executed  
+                    } 
+            </pre>
+            <pre>
+                <h5>Example</h5>
+                &lt;script&gt;  
+                    for (i=1; i<=5; i++)  
+                    {  
+                    document.write(i + "&lt;br/&gt;")  
+                    }  
+                &lt;/script&gt;  
+            </pre>
+            <h4>JavaScript While loop</h4>
+            <p>The JavaScript while loop iterates the elements for the infinite number of times. It should be used if number of iteration is not known. The syntax of while loop is given below.</p>
+            <pre>
+                <h5>Syntax</h5>
+                while (condition)  
+                {  
+                    // code to be executed  
+                }  
+            </pre>
+            <pre>
+                <h5>Example</h5>
+                &lt;script&gt;  
+                    var i=11;  
+                    while (i<=15)  
+                    {  
+                    document.write(i + "&lt;br/&gt;");  
+                    i++;  
+                    }  
+                &lt;/script&gt;  
+            </pre>
+            <h4>JavaScript do while loop</h4>
+            <p>The JavaScript do while loop iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false. The syntax of do while loop is given below.</p>
+            <pre>
+                <h5>Syntax</h5>
+                do{  
+                    // code to be executed  
+                }while (condition);   
+            </pre>
+            <pre>
+                <h5>Example</h5>
+                &lt;script&gt;  
+                    var i=21;  
+                    do{  
+                    document.write(i + "&lt;br/&gt;");  
+                    i++;  
+                    }while (i<=25);  
+                &lt;/script&gt;  
+            </pre>
+            <h4>JavaScript For In loop</h4>
+            <p>TThe JavaScript for in statement loops through the properties of an Object: The syntax of For In loop is given below.</p>
+            <pre>
+                <h5>Syntax</h5>
+                for (key in object) {
+                    // code block to be executed
+                  }   
+            </pre>
+            <pre>
+                <h5>Example</h5>
+                &lt;script&gt;  
+                    const person = {fname:"John", lname:"Doe", age:25};
+                    let text = "";
+                    for (let x in person) {
+                    text += person[x];
+                    } 
+                &lt;/script&gt;  
+            </pre>
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-6 text-sm-start">
+                    <a href="Javascript_Arrays.html"class="btn px-4">❮ Previous</a>
+                </div>
+                <div class="col-sm-6 text-sm-end">
+                    <a href="Javascript_Functions.html"class="btn px-4">Next ❯</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

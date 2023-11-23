@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        <style>
+            *{
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color:rgb(240, 240, 243);
+            }
+            .Login-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 95vh;
+                max-width:100%;
+            }
+            h2{
+                text-align:center;
+                color:green;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 350px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                height:450px;
+            }
+            label {
+                font-weight: bold;
+                margin:10px 15px 20px;
+            }
+            input {
+                padding: 10px 10px 20px 10px;
+                margin-bottom: -20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight:bolder;
+                font-size:15px;
+                margin:20px 0px 0px 120px;
+                width:30%;
+            }
+            a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            p{
+                text-align:center;
+                margin-top:8px;
+            }
+            #email-error{
+                color:red;
+                margin-left: -80px;
+                margin-top:20px;
+            }
+            #password-error{
+                margin-left:-120px;
+                color:red;
+                margin-top:20px;
+            }
+            span{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Login-container">
+            <form action="logincontent.html"id="login-form" onsubmit="return Validation()">
+                <h2>Log in</h2>
+                <label for="email">Email: <span>*</span></label>
+                <input type="email" id="email" name="email">
+                <p class="error" id="email-error"></p>
+                <label for="password">Password: <span>*</span></label>
+                <input type="password" id="password" name="password">
+                <p class="error" id="password-error"></p>
+                <button type="submit">Log in</button>
+                <p>Need an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+        <script>
+            function Validation(){
+                var email=document.getElementById("email").value;
+                var password=document.getElementById("password").value;
+                var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+            
+            if(email == ""){
+                document.getElementById("email-error").innerHTML= "** Please enter e-mail address"; 
+                return false;  
+            }
+            if(!regEmail.test(email)){
+                document.getElementById("email-error").innerHTML= "** Please enter a valid e-mail address"; 
+                return false;  
+            }
+            if (password == ""){
+                document.getElementById("password-error").innerHTML= "** Please enter your password"; 
+                return false;
+            }
+            if(password.length <6){
+                document.getElementById("password-error").innerHTML= "** Atleast 6 character long";
+                return false;
+            }
+            return true; 
+        }
+        </script>
+    </body>
+</html>

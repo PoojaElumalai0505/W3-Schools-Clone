@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common_css.css">
+    <title>HTML_Elements</title>
+  </head>
+  <body style="font-size: large;">
+    <div class="navigation">
+      <nav class="navbar navbar-expand-sm fw-bolder" style="background-color:rgb(77, 162, 236)">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="html_basics.html">HTML</a><li>
+          <li class="nav-item"><a class="nav-link" href="CSS_Introduction.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="Javascript_Introduction.html">JAVASCRIPT</a></li>
+          <li class="nav-item"><a class="nav-link" href="SQL_Introduction.html">SQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="Bootstrap_Introduction.html">BOOTSTRAP</a></li>
+          <li class="nav-item"><a class="nav-link" href="PHP_Introduction.html">PHP</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main" >
+      <div id="sidebar">
+        <ul class="list-unstyled components">
+          <li><a href="html_basics.html">HTML Introduction</a></li>
+          <li><a href="html_elements.html">HTML Elements</a></li>
+          <li><a href="html_attributes.html">HTML Attributes</a></li>
+          <li><a href="html_headings.html">HTML Headings</a></li>
+          <li><a href="html_paragraph.html">HTML Paragraphs</a></li>
+          <li><a href="html_comments.html">HTML Comments</a></li>
+          <li><a href="html_images.html">HTML Images</a></li>
+          <li><a href="html_lists.html">HTML Lists</a></li>
+          <li><a href="html_tables.html">HTML Tables</a></li>
+          <li><a href="html_forms.html">HTML Forms</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="container-fluid mt-5 mx-5">
+          <h1>HTML ELEMENTS</h1>
+          <div class="row mt-4">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-3 text-sm-end">
+              <a href="html_basics.html"class="btn px-4">❮ Previous</a>
+            </div>
+            <div class="col-sm-3  text-sm-start">
+              <a href="html_attributes.html"class="btn px-4">Next ❯</a>
+            </div>
+          </div>
+          <div class="mt-5 px-3 pt-2 fw-bolder">
+            <p>An element is a collection of start tag, attributes, end tag, content between them.</p>
+          </div>
+          <pre>&lt;p&gt;This is a sample webpage.&lt;/p&gt;</pre>
+          <p><strong>Void Elements: </strong>All the elements in HTML do not require to have start tag and end tag, some elements does not have content and end tag such elements are known as Void elements or empty elements. <strong>These elements are also called as unpaired tag.</strong></p>
+          <hr>
+          <h4>Block-level and Inline HTML elements</h4>
+          <ul>
+            <p>For the default display and styling purpose in HTML, all the elements are divided into two categories:</p>
+            <li>Block-level element</li>
+            <li>Inline element</li>
+          </ul>
+          <hr>
+          <h4>Block-level Element:</h4>
+          <p>Block-level elements are HTML elements that start on a new line and expand to the full width of their parent container.</p>
+          <pre>
+            <p>Block level Elements are:</p>&lt;div&gt;,&lt;p&gt;,&lt;address&gt;,&lt;article&gt;,&lt;aside&gt;,&lt;blockquote&gt;,&lt;header&gt;,&lt;hr&gt;,&lt;nav&gt;&lt;dd&gt;,&lt;dl&gt;,&lt;dt&gt;,&lt;h1&gt;-&lt;h6&gt;,&lt;form&gt;,&lt;section&gt;,&lt;table&gt;
+          </pre>
+          <hr>
+          <h4>Inline Element:</h4>
+          <p>Inline elements are HTML elements that do not start on a new line and only take up as much width as necessary to contain their content.</p>
+          <pre>
+            <p>Inline Elements are:</p>&lt;a&gt;,&lt;abbr&gt;,&lt;acronym&gt;,&lt;b&gt;,&lt;bdo&gt;,&lt;br&gt;,&lt;button&gt;,&lt;input&gt;,&lt;img&gt;&lt;q&gt;,&lt;span&gt;,&lt;strong&gt;,&lt;sub&gt;,&lt;sup&gt;,&lt;em&gt;,&lt;i&gt;
+          </pre>
+          <ul class="px-3 pb-3">
+          <div class="row mt-5 mb-5">
+            <div class="col-sm-6 text-sm-start">
+              <a href="html_basics.html" class="btn px-4">❮ Previous</a>
+            </div>
+            <div class="col-sm-6 text-sm-end">
+              <a href="html_attributes.html"class="btn px-4">Next ❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

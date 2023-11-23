@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="common_css.css">
+        <title>SQL_Create_Table</title>
+    </head>
+    <body style="font-size: large;">
+        <div class="navigation">
+            <nav class="navbar navbar-expand-sm fw-bolder" style="background-color:rgb(77, 162, 236)">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="html_basics.html">HTML</a><li>
+                    <li class="nav-item"><a class="nav-link" href="CSS_Introduction.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Javascript_Introduction.html">JAVASCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SQL_Introduction.html">SQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Bootstrap_Introduction.html">BOOTSTRAP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PHP_Introduction.html">PHP</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main" >
+            <div id="sidebar">
+                <ul class="list-unstyled components">
+                    <li><a href="SQL_Introduction.html">SQL Introduction</a></li>
+                    <li><a href="SQL_Syntax.html">SQL Syntax</a></li>
+                    <li><a href="SQL_Select.html">SQL Select</a></li>
+                    <li><a href="SQL_Create_DB.html">SQL Create DB</a></li>
+                    <li><a href="SQL_Drop_DB.html">SQL Drop DB</a></li>
+                    <li><a href="SQL_Create_Table.html">SQL Create Table</a></li>
+                    <li><a href="SQL_Drop_Table.html">SQL Drop Table</a></li>
+                    <li><a href="SQL_Inner_Join.html">SQL Inner Join</a></li>
+                    <li><a href="SQL_Left_Join.html">SQL Left Join</a></li>
+                    <li><a href="SQL_Right_Join.html">SQL Right Join</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="container-fluid mt-5 mx-5">
+                    <h1>SQL CREATE TABLE</h1>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-3 text-sm-end">
+                            <a href="SQL_Drop_DB.html"class="btn px-4">❮ Previous</a>
+                        </div>
+                        <div class="col-sm-3  text-sm-start">
+                            <a href="SQL_Drop_Table.html"class="btn px-4">Next ❯</a>
+                        </div>
+                    </div>
+                    <div class="mt-5 px-3 pt-2">
+                        <h4>The SQL CREATE TABLE Statement</h4> 
+                        <p>The CREATE TABLE statement is used to create a new table in a database.</p>
+                        <pre>
+                            <h5>Syntax</h5>
+                                CREATE TABLE table_name (
+                                column1 datatype,
+                                column2 datatype,
+                                column3 datatype,
+                            ....
+                            );
+                        </pre>
+                        <p>The column parameters specify the names of the columns of the table.</p>
+                        <p>The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).</p>
+                        <hr>
+                        <h4>SQL CREATE TABLE Example</h4>
+                        <p>The following example creates a table called "Persons" that contains five columns: PersonID, LastName, FirstName, Address, and City:</p>
+                        <pre>
+                            <h5>Example</h5>
+                                CREATE TABLE Persons (
+                                PersonID int,
+                                LastName varchar(255),
+                                FirstName varchar(255),
+                                Address varchar(255),
+                                City varchar(255)
+                            );
+                        </pre>
+                        <hr>
+                        <h4>Create Table Using Another Table</h4>
+                        <p>A copy of an existing table can also be created using CREATE TABLE.</p>
+                        <p>The new table gets the same column definitions. All columns or specific columns can be selected.</p>
+                        <p>If you create a new table using an existing table, the new table will be filled with the existing values from the old table.</p>
+                        <pre>
+                            <h5>Syntax</h5>
+                            CREATE TABLE new_table_name AS
+                            SELECT column1, column2,...
+                            FROM existing_table_name
+                            WHERE ....;
+                        </pre>
+                        <p>The following SQL creates a new table called "TestTables" (which is a copy of the "Customers" table):</p>
+                        <pre>
+                            <h5>Example</h5>
+                            CREATE TABLE TestTable AS
+                            SELECT customername, contactname
+                            FROM customers;
+                        </pre>
+                    </div>
+                    <br>
+                    <div class="row mt-5 mb-5">
+                        <div class="col-sm-6 text-sm-start">
+                            <a href="SQL_Drop_DB.html" class="btn px-4">❮ Previous</a>
+                        </div>
+                        <div class="col-sm-6 text-sm-end">
+                            <a href="SQL_Drop_Table.html"class="btn px-4">Next ❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

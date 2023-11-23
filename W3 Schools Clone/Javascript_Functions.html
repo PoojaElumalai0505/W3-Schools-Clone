@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common_css.css">
+    <title>Javascript_Functions</title>
+  </head>
+  <body style="font-size: large;">
+    <div class="navigation">
+      <nav class="navbar navbar-expand-sm fw-bolder" style="background-color:rgb(77, 162, 236)">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="html_basics.html">HTML</a><li>
+          <li class="nav-item"><a class="nav-link" href="CSS_Introduction.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="Javascript_Introduction.html">JAVASCRIPT</a></li>
+          <li class="nav-item"><a class="nav-link" href="SQL_Introduction.html">SQL</a></li>
+          <li class="nav-item"><a class="nav-link" href="Bootstrap_Introduction.html">BOOTSTRAP</a></li>
+          <li class="nav-item"><a class="nav-link" href="PHP_Introduction.html">PHP</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main" >
+      <div id="sidebar">
+        <ul class="list-unstyled components">
+          <li><a href="Javascript_Introduction.html">JavaScript Introduction</a></li>
+          <li><a href="Javascript_Comments.html">Javascript Comments</a></li>
+          <li><a href="Javascript_Variables.html">Javascript Variables</a></li>
+          <li><a href="Javascript_Datatypes.html">Javascript Datatypes</a></li>
+          <li><a href="Javascript_Arrays.html">Javascript Arrays</a></li>
+          <li><a href="Javascript_Loops.html">Javascript Loops</a></li>
+          <li><a href="Javascript_Functions.html">Javascript Functions</a></li>
+          <li><a href="Javascript_Objects.html">Javascript Objects</a></li>
+          <li><a href="Javascript_Switch.html">Javascript Switch</a></li>
+          <li><a href="Javascript_Conditions.html">Javascript Conditions</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="container-fluid mt-5 mx-5">
+            <h1>Javascript Functions</h1>
+            <div class="row mt-4">
+              <div class="col-sm-6">
+              </div>
+              <div class="col-sm-3 text-sm-end">
+              <a href="Javascript_Loops.html" class="btn px-4">❮ Previous</a>
+              </div>
+              <div class="col-sm-3 text-sm-start">
+              <a href="Javascript_Objects.html"class="btn px-4">Next ❯</a>
+              </div>
+            </div>
+            <div class="mt-5 px-3 pt-2">
+              <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+              <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+            </div>
+            <hr>
+            <h4>JavaScript Function Syntax</h4>
+            <pre>
+              <h5>Syntax</h5>
+              function name(parameter1, parameter2, parameter3) {
+              // code to be executed
+              } 
+            </pre>
+            <pre>
+              <h5>Example</h5>
+              &lt;script&gt;  
+                function msg(){  
+                alert("hello! this is message");  
+                }  
+              &lt;/script&gt;  
+            </pre>
+            <h4>Advantages Of Javascript Function</h4>
+            <ol>
+              <li><strong>Code reusability: </strong>We can call a function several times so it save coding.</li>
+              <li><strong>Less Coding: </strong>It makes our program compact. We don't need to write many lines of code each time to perform a common task.</li>
+            </ol>
+            <h4>Function Invocation</h4>
+            <ul>
+              The code inside the function will execute when "something" invokes (calls) the function:
+              <li>When an event occurs (when a user clicks a button)</li>
+              <li>When it is invoked (called) from JavaScript code</li>
+              <li>Automatically (self invoked)</li>
+            </ul>
+            <h4>Function Return</h4>
+            <p>When JavaScript reaches a return statement, the function will stop executing.</p>
+            <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+            <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+            <pre>
+              <h5>Example</h5>
+              Calculate the product of two numbers, and return the result:<br>
+              let x = myFunction(4, 3);
+              function myFunction(a, b) {
+              return a * b;
+              } 
+            </pre>
+            <div class="row mt-5 mb-5">
+              <div class="col-sm-6 text-sm-start">
+                <a href="Javascript_Loops.html"class="btn px-4">❮ Previous</a>
+              </div>
+              <div class="col-sm-6 text-sm-end">
+                <a href="Javascript_Objects.html"class="btn px-4">Next ❯</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

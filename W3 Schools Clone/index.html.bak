@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W3 SCHOOLS CLONE</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            ul li a:hover{
+                text-decoration:underline;
+            }
+            .bg-image{
+                background-image:url('bg.jpg');
+                height:80vh;
+                background-size:cover;
+            }
+            .search-container {
+                position: absolute;
+                top: 60%;
+                left:83%;
+                margin-left:20px;
+                transform: translate(-50%, -50%);
+                padding: 80px 30px;
+                background-color: rgba(235, 238, 240, 0.8);
+                border-radius: 10px;
+                width:280px;
+                height:350px;
+            }
+            h3{
+                color:rgb(130, 78, 185);
+            }
+            .btn:hover {
+                background-color:rgb(44 171 10);
+                transform: scale(1.1);
+                transition: transform 0.5s ease;
+                text-decoration:none;
+            }
+            #secondpage1 img, #secondpage2 img{
+                width:280px;
+                height:200px;
+            }
+            #secondpage1 img:hover, #secondpage2 img:hover{
+                animation: shake 0.3s;
+                animation-iteration-count: infinite;
+                transform: scale(1.1);
+                /* animation: rotate 0.5s ease infinite; */
+            }
+
+            @keyframes shake {
+                20% { transform: translate(-3px, 0px) rotate(1deg); }
+            }
+            @keyframes rotate {
+                0% { transform: rotate(0); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+        <script>
+            function validate(){
+                var txtval = document.getElementById("txtsearch").value;
+                var txtupp = txtval.toUpperCase();
+                if(txtupp == "HTML"){
+                    location.href = "html_basics.html";
+                } else if(txtupp == "CSS"){
+                    location.href = "CSS_Introduction.html";
+                } else if(txtupp == "JAVASCRIPT"){
+                    location.href = "Javascript_Introduction.html";
+                } else if(txtupp == "SQL"){
+                    location.href = "SQL_Introduction.html";
+                } else if(txtupp == "BOOTSTRAP"){
+                    location.href = "Bootstrap_Introduction.html";
+                } else if(txtupp == "PHP"){
+                    location.href = "PHP_Introduction.html";
+                } else{
+                    alert("Page not found.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg" style="background-color:#a77ceb">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder fs-2" style="color:rgba(35, 83, 35, 0.912)" href="#">W3 SCHOOLS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- Signup and Login buttons -->
+                    <ul class="navbar-nav ml-auto">
+                        <button class="mx-2" style="border-radius:30px"><li class="nav-item ">
+                        <a class="nav-link fw-bolder fs-5" href="signup.html" style="color:black">Sign Up</a>
+                        </li></button><br>
+                        <button style="border-radius:30px"><li class="nav-item">
+                        <a class="nav-link fw-bolder fs-5" href="login.html" style="color:black">Log In</a>
+                        </li></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fw-bolder">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="html_basics.html">HTML<span class="sr-only"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="CSS_Introduction.html">CSS</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Javascript_Introduction.html">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SQL_Introduction.html">SQL</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Bootstrap_Introduction.html">BOOTSTRAP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PHP_Introduction.html">PHP</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+    
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="bg.jpg"  class="d-block" style="width:70%; height: 500px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bg2.jpg"  class="d-block" style="width:70%; height: 500px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bg3.jpg"  class="d-block" style="width:70%; height: 500px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bg4.jpg"  class="d-block" style="width:70%; height: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-container text-center">
+            <h2 class="text-center">Welcome to W3 SCHOOLS</h2>
+            <form class="text-center">
+                <input type="text" class="form-control search-bar" placeholder="Search..." id="txtsearch">
+                <input type="button" value="Search" class="btn btn-primary mt-2" onclick="validate()">
+                <span id="error"></span>
+                <!-- <input type="button" value="Search" id="submit" onclick="validate()"/> -->
+            </form>
+        </div>
+        <div class="container-fluid" style="height:100vh;background-color:rgb(99, 19, 81);padding-left:100px;">
+            <div class="row pt-5 mx-3" id="secondpage1">
+                <div class="col-md-4">
+                    <a href="html_basics.html" class="img-button"><img src="html logo.png" alt="HTML"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="CSS_Introduction.html" class="img-button"><img src="CSS logo.png" alt="CSS"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="Javascript_Introduction.html" class="img-button"><img src="JS logo.png" alt="JAVASCRIPT"></a>
+                </div>
+            </div>
+            <div class="row mt-5 pt-5 mx-3" id="secondpage2">
+                <div class="col-md-4">
+                    <a href="SQL_Introduction.html" class="img-button"><img src="sql logo.png" alt="SQL"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="Bootstrap_Introduction.html" class="img-button"><img src="Bootstrap logo.png" alt="BOOTSTRAP"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="PHP_Introduction.html" class="img-button"><img src="logo php.jpeg" alt="PHP"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
